@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Steve Rachocki — Automation Consultant</title>
+  <meta name="description" content="I build automation systems that replace manual B2B workflows — CRM integrations, lead pipelines, and data orchestration. Self-hosted, reliable, and built by someone who actually works in sales ops." />
+  <meta name="author" content="Steve Rachocki" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Steve Rachocki — Automation Consultant" />
+  <meta property="og:description" content="I build automation systems that replace manual B2B workflows. Real systems, real results." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://8bit-kasual.github.io" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Steve Rachocki — Automation Consultant" />
+  <meta name="twitter:description" content="I build automation systems that replace manual B2B workflows." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <!-- Fonts: IBM Plex Sans + IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="Steve Rachocki home">
+        <span class="nav__logo-name">Steve Rachocki</span>
+        <span class="nav__logo-tag">Automation Consultant</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav__links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="nav__cta">Let's Talk</a></li>
+        </ul>
+      </nav>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Let's Talk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="top" aria-labelledby="hero-headline">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__label mono">Automation Consulting · Fort Worth, TX</div>
+        <h1 class="hero__headline" id="hero-headline">
+          Manual workflows kill creativity.<br />
+          I build the systems that eliminate them.
+        </h1>
+        <p class="hero__sub">
+          CRM integrations, lead pipelines, sales ops automation — built on n8n, Python, and self-hosted infrastructure. No six-figure retainer. No bloated SaaS stack.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Book a Discovery Call</a>
+          <a href="#work" class="btn btn--ghost">See the Work</a>
+        </div>
+        <div class="hero__stats" aria-label="Key results">
+          <div class="hero__stat">
+            <span class="hero__stat-number">5 min</span>
+            <span class="hero__stat-label">morning prep (was 45)</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">100%</span>
+            <span class="hero__stat-label">CRM sync coverage</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">50+</span>
+            <span class="hero__stat-label">leads/batch, zero manual entry</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFOLIO / WORK
+    ============================================================ -->
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label mono">/ Featured Projects</span>
+          <h2 id="work-heading">Production systems, not demos.</h2>
+          <p class="section-sub">Every project here started as a real problem. All are running in production today.</p>
+        </div>
+
+        <div class="cards" role="list">
+
+          <!-- Card 1: Lead Enrichment Pipeline -->
+          <article class="card" role="listitem">
+            <div class="card__header">
+              <span class="card__number mono">01</span>
+              <div class="card__tags">
+                <span class="tag">n8n</span>
+                <span class="tag">Apollo</span>
+                <span class="tag">Firecrawl</span>
+                <span class="tag">Hunter.io</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+            <h3 class="card__title">Lead Enrichment Pipeline</h3>
+            <p class="card__problem"><span class="mono label">Problem:</span> 5+ hours/week on manual prospecting. Inconsistent data quality. No repeatable process.</p>
+            <p class="card__result"><span class="mono label">Result:</span> 50+ enriched, scored, and verified leads per batch. ~2 minutes of daily review. Zero manual data entry.</p>
+            <div class="card__footer">
+              <a href="https://github.com/8bit-kasual/automation-portfolio/tree/master/lead-enrichment-pipeline" class="card__link" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: CRM Orchestration -->
+          <article class="card" role="listitem">
+            <div class="card__header">
+              <span class="card__number mono">02</span>
+              <div class="card__tags">
+                <span class="tag">NocoDB</span>
+                <span class="tag">Selenium</span>
+                <span class="tag">n8n</span>
+                <span class="tag">Notion</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+            <h3 class="card__title">Multi-System CRM Orchestration</h3>
+            <p class="card__problem"><span class="mono label">Problem:</span> Internal CRM with no API, no automation hooks, and a 5-minute session timeout. Manual updates across systems.</p>
+            <p class="card__result"><span class="mono label">Result:</span> 57/57 accounts synced (100% coverage). Changes propagate in under 1 minute. Zero licensing cost.</p>
+            <div class="card__footer">
+              <a href="https://github.com/8bit-kasual/automation-portfolio/tree/master/nocodb-crm-orchestration" class="card__link" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Sales Prep Pipeline -->
+          <article class="card" role="listitem">
+            <div class="card__header">
+              <span class="card__number mono">03</span>
+              <div class="card__tags">
+                <span class="tag">n8n</span>
+                <span class="tag">Python</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">NocoDB</span>
+              </div>
+            </div>
+            <h3 class="card__title">Nightly Sales Prep Pipeline</h3>
+            <p class="card__problem"><span class="mono label">Problem:</span> 30–45 minutes of manual prep before every sales call — pulling CRM notes, researching accounts, building talking points.</p>
+            <p class="card__result"><span class="mono label">Result:</span> Prep time dropped to ~5 minutes. Every call starts with a personalized brief, tailored discovery questions, and product recommendations.</p>
+            <div class="card__footer">
+              <a href="https://github.com/8bit-kasual/automation-portfolio/tree/master/sales-prep-pipeline" class="card__link" target="_blank" rel="noopener noreferrer">
+                View on GitHub <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Placeholder 4 -->
+          <article class="card card--placeholder" role="listitem" aria-label="Coming soon">
+            <div class="card__header">
+              <span class="card__number mono">04</span>
+            </div>
+            <h3 class="card__title card__title--muted">Coming Soon</h3>
+            <p class="card__problem card__problem--muted">Next project in progress.</p>
+          </article>
+
+          <!-- Placeholder 5 -->
+          <article class="card card--placeholder" role="listitem" aria-label="Coming soon">
+            <div class="card__header">
+              <span class="card__number mono">05</span>
+            </div>
+            <h3 class="card__title card__title--muted">Coming Soon</h3>
+            <p class="card__problem card__problem--muted">Next project in progress.</p>
+          </article>
+
+        </div><!-- /.cards -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT / CREDIBILITY
+    ============================================================ -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about__inner">
+        <div class="about__text">
+          <span class="section-label mono">/ About</span>
+          <h2 id="about-heading">I know what it's like to be the person the automation is supposed to help.</h2>
+          <p>
+            I spent years in B2B sales for industrial IoT — managing a 57-account territory, working with cellular routers, gateways, and network infrastructure across the Southeast. At some point I got tired of spending half my day on CRM updates and call prep, so I built the tools to automate it.
+          </p>
+          <p>
+            That background matters. I understand business operations from the inside, not just the workflow layer. And because I come from network infrastructure, I build systems that are designed for reliability — not just for demos.
+          </p>
+          <p>
+            I work with n8n, Python, NocoDB, Docker, Tailscale, and AI APIs. Everything I build is self-hosted, maintainable by one person, and built to actually run.
+          </p>
+          <a href="#contact" class="btn btn--primary">Work with Me</a>
+        </div>
+        <div class="about__photo-block">
+          <div class="about__photo-placeholder" aria-label="Photo coming soon">
+            <!-- Photo drops in here -->
+            <span class="mono">Photo coming soon</span>
+          </div>
+          <div class="about__stack">
+            <span class="section-label mono">/ Stack</span>
+            <ul class="stack-list" aria-label="Tools and technologies">
+              <li><span class="tag tag--stack">n8n</span></li>
+              <li><span class="tag tag--stack">Python</span></li>
+              <li><span class="tag tag--stack">NocoDB</span></li>
+              <li><span class="tag tag--stack">PostgreSQL</span></li>
+              <li><span class="tag tag--stack">Docker</span></li>
+              <li><span class="tag tag--stack">Tailscale</span></li>
+              <li><span class="tag tag--stack">Claude API</span></li>
+              <li><span class="tag tag--stack">Selenium</span></li>
+              <li><span class="tag tag--stack">Supabase</span></li>
+              <li><span class="tag tag--stack">JavaScript</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact__inner">
+        <span class="section-label mono">/ Contact</span>
+        <h2 id="contact-heading">Let's talk about what you'd automate first.</h2>
+        <p class="contact__sub">
+          If you're spending more than an hour a day on something repetitive, there's a good chance it can be automated. Reach out and describe what's killing your time.
+        </p>
+        <div class="contact__options">
+          <form class="contact__form" action="https://formspree.io/f/mqeggovj" method="POST" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label for="contact-name" class="form__label mono">Name</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form__input"
+                  placeholder="Your name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form__group">
+                <label for="contact-email" class="form__label mono">Email</label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  class="form__input"
+                  placeholder="you@company.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="contact-message" class="form__label mono">What's eating your time?</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                class="form__input form__textarea"
+                placeholder="Describe the manual process, broken integration, or workflow that's costing you the most time. The more specific, the better."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form__footer">
+              <button type="submit" class="btn btn--primary form__submit">Send Message</button>
+              <p class="form__note mono">I typically respond within one business day.</p>
+            </div>
+            <div class="form__success" id="form-success" aria-live="polite" hidden>
+              <p>Got it — I'll be in touch shortly.</p>
+            </div>
+          </form>
+          <!-- Fallback direct contact -->
+          <div class="contact__fallback">
+            <p>Prefer to reach out directly?</p>
+            <a href="mailto:RachockiS@outlook.com" class="btn btn--ghost">RachockiS@outlook.com</a>
+            <a href="https://github.com/8bit-kasual" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Steve Rachocki</span>
+      <span class="footer__copy mono">Built with HTML, CSS &amp; a strong opinion about unnecessary SaaS subscriptions.</span>
+      <div class="footer__links">
+        <a href="https://github.com/8bit-kasual" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:RachockiS@outlook.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
