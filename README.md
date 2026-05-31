@@ -23,6 +23,11 @@ These projects are production systems I built and use daily, not tutorials or de
 **Solution:** Six-workflow n8n pipeline — Apollo discovery, Firecrawl enrichment, dual ICP/Intent scoring, Hunter.io email verification, and human-in-the-loop approval queue.
 **Result:** 50+ leads per batch, zero manual data entry, ~2 minutes of daily review.
 
+### [POS Splitter Bot](./pos-splitter-bot/)
+**Problem:** Distributor POS exports arrive every month with no rep assignments. Splitting five ways by hand takes an hour and puts clients in the wrong stack.
+**Solution:** Attended UiPath robot reads the export, looks up each end-client in a mapping table, assigns the rep, and writes five consistently-named workbooks. Full run takes a couple of minutes.
+**Result:** ~1 hour/month of manual EOM work eliminated. Zero data-routing errors.
+
 ---
 
 ## Tech Stack
